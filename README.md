@@ -4,4 +4,13 @@ The goal of this project is to create a dashboard to add users, groups, make sud
 
 1) OS = CentOS release 6.5 (Final)
 2) python = Python 3.4.1
-3) bash = GNU bash, version 4.1.2(1)-release (x86_64-redhat-linux-gnu)
+4) bash = GNU bash, version 4.1.2(1)-release (x86_64-redhat-linux-gnu)
+
+CHANGE LOG:
+
+6/7/2014
+1) Add in the menu() function, meny.py is now fixed to allow the following:
+    - selection 1 will show the next GID and return to the menu
+    - selection 2 will show the next UID and return to the menu
+    - selection 3 will exit the python script entirely
+    - any other selection will do nothing and kick back into the main menu/function
