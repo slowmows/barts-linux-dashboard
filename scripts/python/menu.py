@@ -20,24 +20,36 @@ def menu():
 
     ## Print the next available GID
     if selection == '1':
-        print('The next GID is as follows')
-        subprocess.call("/opt/admin-tools/scripts/bash/next-gid.sh", shell=True)
-        menu()
+        gid()
 
     ## Print the next avaialbe UID
     elif selection == '2':
-        print('The next UID is as follows')
-        subprocess.call("/opt/admin-tools/scripts/bash/next-uid.sh", shell=True)
-        menu()
+        uid()
 
     ## Exit the script
     elif selection == '3':
-        print('Good bye')
-        sys.exit()
+        exit()
 
     ## Tell the user to try again and kick back into the function
     else:
         print('Please try again')
         menu()
+
+## GID function
+def gid():
+    print('The next GID is as follows')
+    subprocess.call("/opt/admin-tools/scripts/bash/next-gid.sh", shell=True)
+    menu()
+
+## UID function
+def uid():
+    print('The next UID is as follows')
+    subprocess.call("/opt/admin-tools/scripts/bash/next-uid.sh", shell=True)
+    menu()
+
+## exit function
+def exit():
+    print('Good bye')
+    sys.exit()
 
 menu()

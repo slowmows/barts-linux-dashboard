@@ -14,3 +14,7 @@ CHANGE LOG:
     - selection 2 will show the next UID and return to the menu
     - selection 3 will exit the python script entirely
     - any other selection will do nothing and kick back into the main menu/function
+
+6/10/2014
+1) Add in functions to handle each if/elif/else statement
+    - the menu interface is exactly the same, no difference to the user
